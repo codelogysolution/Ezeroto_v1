@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezeroto</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="/slick.css"> -->
+</head>
+<body>
+
+    <!-- Header and navigation section starts here  -->
+
+    <header class="header">
+        <div class="logo">
+            <a href="#Home"><img src="/Logo.jpg" alt="Hotel Ezeroto-Kostenec"></a> 
+            <h3>Хотел <span>Езерото</span></h3>
+            <p>Костенец</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#Home">Хотел Езерото</a>
+            <a href="#About">За хотела</a>
+            <a href="#Rooms">Стаи</a>
+            <a href="#Restourant">Ресторант</a>
+            <a href="#Pool">Басейн</a>
+            <a href="#Gallery">Галерия</a>
+            <a href="#Promotion">Промоции/Ваучери</a>
+            <a href="#Contacts">Контакти</a>
+        </nav>
+        <button class="menu-btn">
+            <div class="bar"></div>
+        </button>
+        
+
+        <div class="media"> 
+            <a class="social_icon" href="https://www.facebook.com/ezeroto/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </header>
+    
+    <!-- Header and navigation section ends here  -->
+    <!-- Home section starts here  -->
+    <section class="home" id="home">
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/images/Rooms/Hotel_Ezeroto.jpg" alt="Slide picture1"></div>
+            <div class="swiper-slide"><img src="/images/Rooms/Outside_view.jpg" alt="Slide picture2"></div>
+            <div class="swiper-slide"><img src="/images/Rooms/Lamp.jpg" alt="Slide picture3"></div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+        
+            
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row_about">
+                <div class="column_about">
+                    <h4 class="title_about">Хотел Езерото Костенец</h4>
+                    <h2 class="main_title_about">Отдайте се на заслужена почивка</h2>
+                    <p>Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec id velit ac arcu posuere blane.</p>
+                    <p>Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.</p>
+                </div>
+                <div class="column1"> <img src="/images/Restourant/Pic_restourant.jpg" alt="Picture Restourant"> </div>
+                <div class="column2"> <img src="images/Rooms/Pic_room.jpg" alt="Picture Room"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home section ends here  -->
+    <!-- About section starts here  -->
+
+<section class="about" id="about">
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- About section ends here  -->
+
+    <!-- Script section section starts here  -->
+    <script src="/main.js"></script>
+    <!-- <script src="/slick.min.js"></script>
+    <script src="/custom.js"></script> -->
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+
+    <!-- Home picture slider js  -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+        loop: true,
+    
+        pagination: {
+        el: '.swiper-pagination',
+        clickable:true
+        },
+    
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+  });
+    </script>
+    
+    <!-- Script section section endss here  -->
+    
+</body>
+</html>

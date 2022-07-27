@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Poppins:wght@100;200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+     /* Main theme color */
+  --first-color-main: #18140ffd;
+  --background-color: #251d16;
+  --third-color: #aa8453;
+  --white:#fff;
+  --black:#292727;
+  --nav-letter:#70768a;
+  
+  /* Hoover colors */
+  --hoover-color: #c0955d;
+
+  /* Font size */
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+
+   /* Scroll bar colors */
+   --scroll-bar-color: #c5cadf;
+   --scroll-thumb-color: #70768a;
+   --scroll-thumb-hoover-color: #454f6b;
+
+   /* Logo font  */
+   --logo-font: 'Caveat', cursive;
+}
+
+::selection {
+    background-color: var(--hoover-color);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    color: var(--first-color-main);
+    background: var(--background-color);
+    margin: 2rem 0 0 0;
+    transition: 0.5s ease;
+  }
+
+  /* Scroll bar section  */
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--background-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--hoover-color);
+    border-radius: 2em;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--hoover-color);
+  }
+ 
+  /* Header and navigation section starts here  */
+
+  .header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 999;
+    background: var(--first-color-main);
+    width: 30rem;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .header .logo img{
+    margin: 1rem 0;
+    border: .8rem solid transparent;
+    border-radius: 50%;
+    height: 17rem;
+    width: 17rem;    
+  }
+
+  .header .logo h3{
+    margin: .5rem;
+    color: var(--white);
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+}
+.header .logo h3 span {
+    color: var(--third-color);
+    font-size: 4rem;
+    font-family: var(--logo-font);
+}
+.header .logo p{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    margin: .5rem;
+}
+
+.header .navbar{
+    padding-top: 1.5rem;
+    color: var(--hoover-color);
+}
+.header .navbar a{
+    display: block;
+    margin: 1.2rem 0;
+    padding: .7rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--third-color);
+}
+.header .navbar a:hover{
+    color: var(--white);
+    background: var(--hoover-color);
+}
+
+.social_icon{
+    position: relative;
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    border-radius: 30%;
+    text-align: center;
+    background: var(--first-color-main);
+    box-shadow: 0 5px 15px -5px #00000080;
+    overflow: hidden;
+}
+
+.social_icon i{
+    line-height: 7rem;
+    font-size: 3rem;
+    color: var(--hoover-color);
+    transition: 0.2s linear;
+}
+
+.social_icon:hover i{
+    transform: scale(1.4);
+    color: var(--background-color);
+}
+
+.social_icon::before{
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: var(--hoover-color);
+    transform: rotate(45deg);
+    top: 90%;
+    left: -110%;
+}
+
+.social_icon:hover::before{
+    top: -10%;
+    left: -10%;
+    animation: social_animate 0.7s;
+}
+
+@keyframes social_animate{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
+  /* Header and navigation section ends here  */
+  /* Menu button starts here  */
+.menu-btn{
+    position: fixed;
+    top: 1.5rem;
+    left:2rem;
+    z-index: 1000;
+    height: 5rem;
+    width: 5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;  
+    background: var(--background-color);   
+    display: none;
+}
+.menu-btn .bar, .menu-btn::after, .menu-btn::before{
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    margin: 6px 9px;
+    transition: 0.3s;
+    background: var(--third-color);
+}
+
+.menu-btn.active:before{
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+.menu-btn.active:after{
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+.menu-btn.active .bar{
+    opacity: 0;
+}
+
+/* .menu-btn:hover{
+    background: var(--hoover-color);
+} */
+
+
+  /* Menu button ends here  */
+
+/* Home section starts here  */
+section{
+    margin-left: 30rem;
+}
+.home {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    
+}
+.container{
+    width: 100%;
+    height: 85vh;
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev{
+    position: absolute;
+    left:47.8%;
+    top:90%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.swiper .swiper-button-next{
+    position: absolute;
+    right:47.8%;
+    top:90%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.swiper i{
+    font-size: 3rem;
+    color: var(--background-color);
+    background: transparent;
+    border-radius: 60%;
+    opacity: .9;
+    /* border: 2px solid rgba(0, 0, 0, 100); */
+}
+.swiper i:hover{
+    font-size: 3rem;
+    color: var(--hoover-color);
+    background: transparent;
+    border-radius: 60%;
+    transition: .3s linear;
+    opacity: .9;
+}
+
+/* Home-about section*/
+
+.row_about{
+    margin-right: 55rem;
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column_about{
+    margin-left: 40rem;
+    margin: 24rem; 
+    position: absolute;
+    margin-bottom: 20rem;
+}
+
+.title_about{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 1rem;
+    color: var(--third-color);
+    text-align: left;
+    margin: 1rem;
+}
+
+.main_title_about{
+    font-size: 3.5rem;
+    text-transform: none;
+    letter-spacing: .3rem;
+    margin-bottom: 1rem;
+    font-family: var(--logo-font);
+    color: var(--white);
+    text-align: left;
+    margin: 1rem;
+}
+
+.column_about p{
+    font-size: 1.5rem;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.5);
+    padding: 1rem;
+    text-align: left;
+}
+.column1{
+    margin-left: 98rem;
+    margin-top: 10rem;
+    top: 15%;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+.column1 img{
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 15%;
+    align-items: center;
+}
+
+.column2{
+    margin-left: 116rem;
+    margin-top: 5rem;
+    top: 15%;
+    bottom: 15%;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+
+.column2 img{
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+}
+/* Home section ends here  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries  */
+@media (max-width: 1260px) {
+    html{
+        font-size: 60%;
+    }
+    body {
+        padding-left: 0;
+    }
+    .header {
+        left: -120%;
+    }
+    .header.active {
+        left: 0%;
+        transition: .4s linear;
+    }
+    .menu-btn{
+        display: initial;
+    }
+    .menu-btn{
+        background: var(--first-color-main);
+    }
+    .menu-btn.active{
+        background: var(--background-color);
+    }
+    }
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;        
+    }
+    body {
+        padding-left: 0;
+    }
+    .header {
+        left: -110%;
+    }
+    .header.active {
+        left: 0%;
+        transition: .4s linear;
+    }
+    .menu-btn{
+        display: initial;
+    }   
+    .menu-btn{
+        background: var(--first-color-main);
+    }
+    .menu-btn.active{
+        background: var(--background-color);
+    }
+    /* .card{
+       
+        max-width: 600px;
+    }
+    .card-content h3, .card-content span{
+        font-size: 2rem;
+    }     */
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;        
+    }
+    .header{
+        width: 100%;
+        border-right: 0;
+    }
+    .menu-btn{
+        background: var(--first-color-main);
+    }
+    .menu-btn.active{
+        background: var(--background-color);
+    }
+}

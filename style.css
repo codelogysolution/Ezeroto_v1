@@ -638,6 +638,40 @@ section{
     .card-content h3, .card-content span{
         font-size: 2rem;
     }     */
+
+    .capacity{
+        color: white;
+
+    }
+    .capacity h2{
+        font-size: 8rem;
+        text-align: center;
+        text-transform:none;
+    
+    }
+    .capacity h3{
+        font-size: 4rem;
+        text-align: center;
+        text-transform:none;
+    
+    
+    
+    }
+    .capacity li{
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 17rem;
+        text-transform:none;
+    
+    }
+    .capacity ol{
+    box-sizing: border-box;
+    margin: 10rem;
+    text-transform:none;
+    
+    }
+
+
 }
 @media (max-width: 450px){
     html{

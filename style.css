@@ -896,11 +896,7 @@ section{
     font-size: 2.5rem;
     margin-right: .8rem;
   }
-  .footer-container .follow .footer-contact-mail i:hover{
-    transform: rotate(30deg);
-    transition: .4s;
-  }
-  .footer-copyright{
+.footer-copyright{
     position: absolute;
     display: flex;
     margin-left: 81.5rem;
@@ -1278,12 +1274,13 @@ section{
     font-size: 3rem;
 }
 .contact-container-map{
-    margin-top: 10rem;
+    margin-top: 7rem;
     display: flex;
     height: 65vh;
     justify-content: center;
     align-items: center;
     margin-left: 30rem;
+    margin-bottom: 10rem;
 }
 .mapBox{
     position: relative;
@@ -1306,6 +1303,8 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 30rem;
+    margin-bottom: 10rem;
 }
 .main-container ul{
     display: flex;

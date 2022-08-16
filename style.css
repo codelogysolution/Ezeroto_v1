@@ -850,7 +850,7 @@ section{
     color: #ffffff80;
   }
   .footer-container .follow .footer-contact-phone{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: #ffffff80;
     font-size: 2rem;
     font-weight: 300;
@@ -875,7 +875,7 @@ section{
     display: inline-block;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
   }
   /* .footer-contact-mail:hover {
     color: var(--hoover-color);

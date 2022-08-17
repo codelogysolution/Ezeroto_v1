@@ -45,7 +45,7 @@
     text-decoration: none;
     /* text-transform: capitalize; */
     transition: .2s linear;
-    /* list-style: none; */
+    list-style: none;
   }
   
   html {
@@ -936,6 +936,12 @@ section{
     overflow-y: auto;
 
 }
+.rooms_info li::first-letter{
+    text-transform: capitalize;
+}
+.rooms_info li{
+    list-style: disc;
+}
 .rooms_item_1 {
  
     min-height: 150px;
@@ -1165,7 +1171,7 @@ section{
     display: flex;
     height: 95vh;
     justify-content: center;
-    /* border: 3px solid red; */
+    width: 100%;    
 }
 
 .contact-item {
@@ -1184,9 +1190,7 @@ section{
     align-items: center;
     background-size: cover;
     background-position: center;
-    margin-bottom: 2rem;
-    /* visibility: hidden; */
-    /* border: 3px solid blue; */
+    margin: 0;
 }
 .contact-container .contact-background h3{
     font-size: 7rem;
@@ -1204,9 +1208,6 @@ section{
 .contact-container .email{
     min-height: 20px;
     width: 300px;
-    /* justify-content: center;
-    align-items: left;
-    margin-top: 40rem; */
 }
 .contact-container .about{
     margin-left: -15rem;
@@ -1329,6 +1330,7 @@ section{
     letter-spacing: 1px;
     cursor: pointer;
     font-size: 1.5rem;
+    border-radius: 5px;
 }
 .main-container ul li.active{
     background: var(--hoover-color);
@@ -1339,7 +1341,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* margin-right: 30rem; */
 }
 .images .itemBox{
     position: relative;

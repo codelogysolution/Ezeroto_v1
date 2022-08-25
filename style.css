@@ -81,7 +81,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   margin-left: 30rem;
-  /* border: 3px solid palevioletred; */
+  border: 3px solid palevioletred;
 }
 .container {
   width: 100%;
@@ -93,7 +93,7 @@ section {
   flex-wrap: wrap;
   margin: 5px 5px 5px 5px;
   padding: 5px;
-  /* border: 3px solid green; */
+  border: 3px solid green;
   position: relative;
 }
 /* Scroll bar section  */
@@ -373,6 +373,11 @@ section {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 30px;
 }
+.container .column_title p span {
+  font-family: var(--logo-font);
+  color: var(--hoover-color);
+  font-size: 2.2rem;
+}
 .container .column1 {
   margin-bottom: 20rem;
 }
@@ -405,8 +410,9 @@ section {
 }
 .container .column3 img {
   width: 600px;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  object-position: 50% 30%;
   border-radius: 5px;
 }
 
@@ -691,6 +697,11 @@ section {
   font-size: 1.3rem;
   font-weight: 400;
 }
+.container .content p span {
+  font-family: var(--logo-font);
+  font-size: 2.2rem;
+  color: var(--hoover-color);
+}
 
 /* Home section ends here  */
 /* Footer section starts here  */
@@ -725,6 +736,11 @@ section {
   letter-spacing: 0.1rem;
   text-transform: none;
   color: #ffffff80;
+}
+.footer-container .about p span {
+  font-size: 2.5rem;
+  font-family: var(--logo-font);
+  color: var(--hoover-color);
 }
 .footer-container .explore .footer-title {
   font-size: 2.7rem;
@@ -1129,6 +1145,8 @@ section {
   letter-spacing: 0.1rem;
   margin-left: 20rem;
   text-shadow: 0 5px 25px rgb(0 0 0 /20%);
+  font-family: var(--logo-font);
+  font-size: 10rem;
 }
 .contact-container .about,
 .contact-container .address,
@@ -1153,8 +1171,13 @@ section {
   color: #ffffff80;
   font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   margin: 25px 5px;
+}
+.contact-container .about p span {
+  font-size: 2.5rem;
+  font-family: var(--logo-font);
+  color: var(--hoover-color);
 }
 .contact-container .address {
   margin-left: 10rem;
@@ -1174,7 +1197,7 @@ section {
   color: #ffffff80;
   font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   margin: 25px 5px;
 }
 .contact-container .address p i {
@@ -1183,9 +1206,9 @@ section {
   margin-right: 0.8rem;
 }
 .contact-container .address span {
-  color: var(--third-color);
+  color: var(--hoover-color);
   font-family: var(--logo-font);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .contact-container .phone {
@@ -1213,12 +1236,15 @@ section {
   display: flex;
   position: absolute;
   margin-bottom: 55rem;
-  width: 42%;
-  height: 40px;
+  width: 30%;
+  height: 50px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 3px solid var(--hoover-color);
+  border-radius: 10px;
 }
+
 .direction img {
   margin-right: 1rem;
   width: 3rem;
@@ -1229,7 +1255,7 @@ section {
   transition: 1s;
 }
 .direction a {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: var(--white);
   font-family: var(--logo-font);
 }
@@ -1260,7 +1286,7 @@ section {
 
 /* Gallery section starts here  */
 
-.main-container {
+/* .main-container {
   padding: 20px;
   width: 1430px;
   display: flex;
@@ -1269,16 +1295,19 @@ section {
   flex-direction: column;
   margin-left: 30rem;
   margin-bottom: 10rem;
-}
-.main-container ul {
+  border: 3px solid red;
+} */
+.container ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 77rem;
+  margin-left: 25rem;
+  position: absolute;
 }
 
-.main-container ul li {
+.container ul li {
   list-style: none;
   background: #eee;
   padding: 12px 20px;
@@ -1288,22 +1317,27 @@ section {
   font-size: 1.5rem;
   border-radius: 5px;
 }
-.main-container ul li.active {
+.container ul li.active {
   background: var(--hoover-color);
   color: var(--white);
 }
+
 .images {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 7rem;
 }
 .images .itemBox {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 170px;
+  height: 170px;
   margin: 10px;
-  display: block;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .images .itemBox.hide {
   display: none;

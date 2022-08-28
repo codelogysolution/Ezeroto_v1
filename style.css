@@ -1716,6 +1716,30 @@ section li {
     margin: 10rem;
     text-transform: none;
   }
+  /* Restaurant */
+  .main_container{
+margin-left: 0;
+  }
+  /* .restaurant_item{
+    width: 0;
+  }
+  .restaurant_item_2{
+    display: none;
+    min-height: 0;
+    flex-direction: column;
+  }
+ */
+.restaurant_item_2{
+  display:contents;
+  min-height: 0;
+  flex-direction: column;
+}
+.restaurant_item22{
+  width: 60vw;
+height: auto;
+}
+
+ 
 }
 @media (max-width: 450px) {
   html {

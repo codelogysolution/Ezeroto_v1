@@ -964,6 +964,12 @@ section {
   min-height: 500px;
   /* border: 3px solid red; */
 }
+.rooms_item_4r {
+  display: flex;
+  flex-direction: row;
+  min-height: 500px;
+  /* border: 3px solid red; */
+}
 
 .rooms_item_41 {
   width: 50vw;
@@ -1716,19 +1722,39 @@ section li {
     margin: 10rem;
     text-transform: none;
   }
+/* rooms */
+.rooms_item{
+  width: auto;
+}
+
+.rooms_item_42{
+width: 95vw;
+height: auto;
+}
+.rooms_item_4r{
+  flex-direction: column-reverse;
+}
+.rooms_item_4{
+  display:contents;
+}
+.rooms_item_41 {
+  width: auto;
+  height: auto;
+}
+.rooms_item_42r{
+  width: auto;
+  height: auto;
+}
+.rooms_item_41r{
+  width: auto;
+  height: auto;
+}
+
   /* Restaurant */
   .main_container{
 margin-left: 0;
   }
-  /* .restaurant_item{
-    width: 0;
-  }
-  .restaurant_item_2{
-    display: none;
-    min-height: 0;
-    flex-direction: column;
-  }
- */
+
 .restaurant_item_2{
   display:contents;
   min-height: 0;
@@ -1737,6 +1763,10 @@ margin-left: 0;
 .restaurant_item22{
   width: 60vw;
 height: auto;
+}
+.rooms_item_1{
+  min-height: auto;
+  margin-top: 100px;
 }
 
  

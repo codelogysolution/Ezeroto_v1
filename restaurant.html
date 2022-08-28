@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ezeroto</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <link
       rel="stylesheet"
@@ -68,25 +68,10 @@
 
       <div class="restaurant_item restaurant_item_2">
         <div class="restaurant_item22">
-          <img src="Images/Restourant/rest1.jpg" alt="" />
+          <img src="images/Restourant/rest1.jpg" alt="" />
         </div>
         <div class="restaurant_item22">
-          <img src="Images/Restourant/rest2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="restaurant_item restaurant_item_11">
-        <h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
-          nulla.
-        </h4>
-      </div>
-
-      <div class="restaurant_item restaurant_item_2">
-        <div class="restaurant_item22">
-          <img src="Images/Restourant/rest3.jpg" alt="" />
-        </div>
-        <div class="restaurant_item22">
-          <img src="Images/Restourant/rest4.jpg" alt="" />
+          <img src="images/Restourant/rest2.jpg" alt="" />
         </div>
       </div>
       <div class="restaurant_item restaurant_item_11">
@@ -98,10 +83,25 @@
 
       <div class="restaurant_item restaurant_item_2">
         <div class="restaurant_item22">
-          <img src="Images/Restourant/rest5.jpg" alt="" />
+          <img src="images/Restourant/rest3.jpg" alt="" />
         </div>
         <div class="restaurant_item22">
-          <img src="Images/Restourant/rest6.jpg" alt="" />
+          <img src="images/Restourant/rest4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="restaurant_item restaurant_item_11">
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
+          nulla.
+        </h4>
+      </div>
+
+      <div class="restaurant_item restaurant_item_2">
+        <div class="restaurant_item22">
+          <img src="images/Restourant/rest5.jpg" alt="" />
+        </div>
+        <div class="restaurant_item22">
+          <img src="images/Restourant/rest6.jpg" alt="" />
         </div>
       </div>
       <!-- <div class="restaurant_item restaurant_item_11">
@@ -116,5 +116,32 @@
         <div class="restaurant_item22"></div>
       </div> -->
     </div>
+    <!-- Script section  starts here  -->
+    <script src="/main.js"></script>
+    <!-- <script src="/slick.min.js"></script>
+ <script src="/custom.js"></script> -->
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

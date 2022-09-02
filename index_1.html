@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezeroto</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/swiper-bundle.min.css" />
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header and navigation section starts here  -->
+
+    <header class="header">
+      <div class="logo">
+        <a href="#Home"
+          ><img src="/logoto2.jpg" alt="Hotel Ezeroto-Kostenec"
+        /></a>
+        <h3>Хотел <span>Езерото</span></h3>
+        <p>Костенец</p>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html">Хотел Езерото</a>
+        <a href="rooms.html">Стаи</a>
+        <a href="restaurant.html">Ресторант</a>
+        <a href="pool.html">Басейн</a>
+        <a href="gallery.html">Галерия</a>
+        <a href="#Promotion">Промоции/Ваучери</a>
+        <a href="contact.html">Контакти</a>
+      </nav>
+      <button class="menu-btn">
+        <div class="bar"></div>
+      </button>
+
+      <div class="media">
+        <a
+          class="social_icon"
+          href="https://www.facebook.com/ezeroto/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+      </div>
+    </header>
+
+    <div class="main_container">
+      <div class="landingpage_items lp_item_1">
+        <img src="images/Slider/Slider3.jpg" alt="" />
+      </div>
+      <div class="landingpage_items lp_item_2">
+        <h2>Хотел Езерото Костенец</h2>
+        <h3>Отдайте се на заслужена почивка</h3>
+        <p>
+          Комплекс <span>Езерото</span> e вашето идилично място за пълноценна
+          почивка, романтичен уикенд или изходна база за спа,пешеходен и
+          исторически туризъм. Разположен на час път от София и от Пловдив, и в
+          близост до разнообразни природни феномени и културни забележителности.
+        </p>
+        <p>
+          Комплексът Ви осигурява уют, спокойствие и живописна гледка към езеро.
+          Можете да се насладите на почивката си в минералния басейни, джакузи,
+          спа и фитнес център, солариум и сауна. За децата има специална
+          площадка и интересен зоокът.
+        </p>
+      </div>
+
+      <div class="landingpage_items lp_item_3">
+        <div class="lp_item_31">
+          <img src="/images/About/Restourant.jpg" alt="Picture Restourant" />
+        </div>
+        <div class="lp_item_31">
+          <img src="images/Rooms/Apartament.jpg" alt="Picture Room" />
+        </div>
+        <div class="lp_item_31">
+          <img src="images/About/Waterfall.jpg" alt="Picture Pool" />
+        </div>
+      </div>
+      <div class="landingpage_items lp_item_2">
+        <h2>Хотел Езерото Костенец</h2>
+        <h3>Стаи и апартаменти</h3>
+      </div>
+    </div>
+
+    <!-- Script section  starts here  -->
+    <script src="/main.js"></script>
+    <!-- <script src="/slick.min.js"></script>
+     <script src="/custom.js"></script> -->
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+
+    <!-- Home picture slider js  -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

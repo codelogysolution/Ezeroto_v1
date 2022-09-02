@@ -69,7 +69,7 @@ html {
 body {
   color: var(--first-color-main);
   background: var(--background-color);
-  margin: 2rem 0 0 0;
+  /* margin: 2rem 0 0 0; */
   transition: 0.5s ease;
 }
 section {
@@ -880,6 +880,104 @@ section {
   margin-bottom: 2rem;
 }
 /* Footer section starts here  */
+
+/* Landing page */
+.landingpage_items
+{
+  width: 65vw;
+  color: var(--white);
+  text-transform: none;
+}
+.lp_item_1 {
+  width: 85vw;
+  height: 99vh;
+  /* margin: 10px; */
+  color: whitesmoke;
+  text-transform: none;
+  border: 3px solid green;
+  margin-left: 100px;
+}
+.lp_item_1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+.lp_item_2{
+  width: 100%;
+  height: 100%;
+  /* margin: 10px; */
+  color: whitesmoke;
+  text-transform: none;
+  /* border: 3px solid yellow; */
+  margin-left: 200px;
+  
+}
+.lp_item_2 h2{
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--third-color);
+}
+.lp_item_2 h3{
+margin-top: 0.4rem;
+margin-left: 2.5rem;
+
+font-size: 4rem;
+text-transform: none;
+letter-spacing: 0.1rem;
+font-family: var(--logo-font);
+color: var(--white);
+}
+.lp_item_2 p{
+  font-size: 1.5rem;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 150px;
+}
+.lp_item_2 p span{
+  font-family: var(--logo-font);
+  color: var(--hoover-color);
+  font-size: 2.2rem;
+}
+
+.lp_item_3{
+  width: 83vw;
+  height: 40vh;
+  /* margin: 10px; */
+  color: whitesmoke;
+  text-transform: none;
+  border: 3px solid yellow;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+margin-right: 50px;
+
+}
+.lp_item_31{
+  margin-top: 2rem;
+  border: 3px solid blue;
+  width: auto;
+  height: 35vh;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.lp_item_31 img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
 /* Rooms */
 
 .main_container {
@@ -888,7 +986,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   margin-left: 20rem;
-  /* border: 3px solid palevioletred; */
+  border: 3px solid palevioletred;
 }
 
 .rooms_item {
@@ -1753,6 +1851,7 @@ height: auto;
   /* Restaurant */
   .main_container{
 margin-left: 0;
+border: 3px solid palevioletred;
   }
 
 .restaurant_item_2{
@@ -1769,7 +1868,10 @@ height: auto;
   margin-top: 100px;
 }
 
- 
+
+
+
+
 }
 @media (max-width: 450px) {
   html {

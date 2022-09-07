@@ -977,7 +977,7 @@ margin-right: 50px;
   border-radius: 5px;
 }
 
-.lp_item_4{
+.lp_item_4 , .lp_item_6{
   width: 70vw;
   height: 40vh;
   /* margin: 10px; */
@@ -991,7 +991,7 @@ margin-right: 50px;
 margin-right: 50px;
 
 }
-.lp_item_41{
+.lp_item_41 , .lp_item_61{
   margin-top: 2rem;
   /* border: 3px solid blue; */
   width: auto;
@@ -999,7 +999,7 @@ margin-right: 50px;
   margin-left: 2rem;
   margin-right: 2rem;
 }
-.lp_item_41 img{
+.lp_item_41 img , .lp_item_61 img{
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -1016,27 +1016,42 @@ margin-right: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-margin-right: 50px;
+  margin-right: 50px;
 
 }
 
-.lp_item_6{
+.lp_item_411{
+  margin-top: 24.5rem;
+  border: 3px solid green;
+  width: auto;
+  height: 5vh;
+  margin-left: 6rem;
+  margin-right: 2rem;
+  /* float: left; */
+  position: absolute;
+  /* left: 0px;
+  top: 0px; */
+  z-index: 1000;
+  padding: 5px;
+  /* color: #FFFFFF; */
+  /* font-weight: bold; */
+}
+
+/* .lp_item_6{
   width: 80vw;
   height: 40vh;
-  /* margin: 10px; */
   color: whitesmoke;
   text-transform: none;
-  /* border: 3px solid yellow; */
   margin-left: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-margin-right: 50px;
+ margin-right: 50px;
 
 }
 .lp_item_61{
   margin-top: 2rem;
-  /* border: 3px solid blue; */
+  border: 3px solid blue;
   width: auto;
   height: 35vh;
   margin-left: 8rem;
@@ -1048,7 +1063,7 @@ margin-right: 50px;
   height: 100%;
   border-radius: 5px;
   margin-right: 50px;
-}
+} */
 /* Rooms */
 
 .main_container {

@@ -277,14 +277,14 @@ section {
 
 /* Home section starts here  */
 
-.container-swipper {
+/* .container-swipper {
   width: 100%;
   height: 86vh;
   background: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .swiper {
   width: 100%;
   height: fit-content;
@@ -297,23 +297,23 @@ section {
 
 .swiper .swiper-button-prev {
   position: absolute;
-  left: 47.8%;
-  top: 90%;
+  left: 47%;
+  top: 83%;
   text-align: center;
   display: inline-block;
   cursor: pointer;
 }
 .swiper .swiper-button-next {
   position: absolute;
-  right: 47.8%;
-  top: 90%;
+  right: 47%;
+  top: 83%;
   text-align: center;
   display: inline-block;
   cursor: pointer;
 }
 
 .swiper i {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--background-color);
   background: transparent;
   border-radius: 60%;
@@ -321,7 +321,7 @@ section {
   /* border: 2px solid rgba(0, 0, 0, 100); */
 }
 .swiper i:hover {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--hoover-color);
   background: transparent;
   border-radius: 60%;
@@ -612,7 +612,7 @@ section {
 
 /* Home-faciliries section  */
 .container .box {
-  /* border: 3px solid pink; */
+  border: 3px solid pink;
   width: 1400px;
   height: 85%;
   display: flex;
@@ -627,7 +627,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 3px solid orange; */
+  border: 3px solid orange;
   margin-top: 5rem;
   margin-left: 8rem;
 }
@@ -639,22 +639,7 @@ section {
   width: 100%;
   border-radius: 25px;
 }
-.container .row-facilities .facilities .facilities-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--background-color);
-  border: 3px solid var(--hoover-color);
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-  border-radius: 20px;
-}
+
 .container .row-facilities:hover .facilities .facilities-card {
   width: 140px;
   height: 140px;
@@ -885,20 +870,17 @@ section {
 .landingpage_items {
   width: 65vw;
   color: var(--white);
-  text-transform: none;
 }
 .lp_item_1 {
-  width: 85vw;
-  height: 99vh;
+  width: 83vw;
+  height: auto;
   /* margin: 10px; */
-  color: whitesmoke;
-  text-transform: none;
   /* border: 3px solid green; */
   margin-left: 100px;
 }
 .lp_item_1 img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -1148,7 +1130,7 @@ section {
   color: var(--third-color);
 }
 
-/* .lp_item_6{
+/* .lp_item_6 {
   width: 80vw;
   height: 40vh;
   color: whitesmoke;
@@ -1157,24 +1139,24 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- margin-right: 50px;
-
+  margin-right: 50px;
 }
-.lp_item_61{
+.lp_item_61 {
   margin-top: 2rem;
   border: 3px solid blue;
   width: auto;
   height: 35vh;
   margin-left: 8rem;
   margin-right: 2rem;
-}
-.lp_item_61 img{
+} */
+/* .lp_item_61 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 5px;
   margin-right: 50px;
-} */
+}
+
 /* Rooms */
 
 .main_container {
@@ -2017,6 +1999,19 @@ section li {
   }
 
   /* LandingPage */
+  .swiper .swiper-button-prev {
+    left: 42.8%;
+    top: 90%;
+  }
+  .swiper .swiper-button-next {
+    top: 90%;
+  }
+  .swiper i {
+    font-size: 4rem;
+  }
+  .swiper i:hover {
+    font-size: 4rem;
+  }
   .lp_item_4 {
     width: auto;
     height: auto;
@@ -2051,8 +2046,8 @@ section li {
     width: 70.3rem;
   }
   .lp_item_412 {
-    width: 70.3rem;
-    margin-left: 0.6rem;
+    width: 70.5rem;
+    margin-left: 0.3rem;
   }
   .lp_item_41 .lp_item_411 h2 {
     font-size: 2.7em;
@@ -2127,6 +2122,20 @@ section li {
   }
   .menu-btn.active {
     background: var(--background-color);
+  }
+  .swiper .swiper-button-prev {
+    left: 40.8%;
+    top: 90%;
+  }
+  .swiper .swiper-button-next {
+    right: 43.8%;
+    top: 90%;
+  }
+  .swiper i {
+    font-size: 3rem;
+  }
+  .swiper i:hover {
+    font-size: 3rem;
   }
   .lp_item_2 {
     margin-left: 75px;

@@ -741,7 +741,7 @@ section {
 .footer-explore-list li a {
   position: relative;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #ffffff80;
   -webkit-transition: all 500ms ease;
@@ -1155,8 +1155,32 @@ section {
   height: 100%;
   border-radius: 5px;
   margin-right: 50px;
+}*/
+.lp_item_7 {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  color: whitesmoke;
+  text-transform: none;
+  border: 3px solid yellow;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-top: 20rem;
+  margin-bottom: 3rem;
 }
-
+.lp_item_71 {
+  border: 3px solid blue;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  margin-left: 2rem;
+  margin-right: 2rem;
+margin-top: 1rem;
+}
+.lp_item_71 h2{
+  margin-bottom: 1rem;
+}
 /* Rooms */
 
 .main_container {
@@ -2060,6 +2084,12 @@ section li {
   .lp_item_5 a {
     padding: 15px;
     margin: 18px 130px;
+  }
+  .lp_item_7{
+    margin-left: 0;
+    display: block;
+    margin-right: 0;
+    
   }
   /* rooms */
   .rooms_item {

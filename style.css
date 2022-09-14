@@ -252,7 +252,7 @@ section {
 .menu-btn::before {
   content: "";
   display: block;
-  width: 60%;
+  width: 56%;
   height: 4px;
   margin: 6px 9px;
   transition: 0.3s;
@@ -418,8 +418,8 @@ section {
 
 /* Home-room section  */
 
-.container .title {
-  /* border: 3px solid orangered; */
+/* .container .title {
+  border: 3px solid orangered;
   position: absolute;
   width: 500px;
   height: 100px;
@@ -428,7 +428,7 @@ section {
   margin-left: 8rem;
 }
 .container .row {
-  /* border: 3px solid yellow; */
+  border: 3px solid yellow;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -450,7 +450,7 @@ section {
   text-transform: none;
   display: flex;
   flex-direction: column;
-  /* border: 3px solid red; */
+  border: 3px solid red;
 }
 .container .row .room-image {
   position: relative;
@@ -523,15 +523,15 @@ section {
 }
 .container .icon-links svg {
   fill: var(--third-color);
-  font-size: 20px;
-}
+  font-size: 45px;
+} */
 
-.container .more .icon-links a:not(:last-child) {
+/* .container .more .icon-links a:not(:last-child) {
   margin-right: 20px;
 }
 .icon-links svg:hover {
   transform: scale(1.7);
-}
+} */
 .button {
   display: flex;
   position: absolute;
@@ -893,6 +893,8 @@ section {
   vertical-align: top;
   transition: 0.6s;
   transition-property: opacity;
+  object-fit: cover;
+  object-position: center;
 }
 .lp_item_42:hover img {
   opacity: 1;
@@ -908,18 +910,21 @@ section {
 }
 .lp_item_42 .lp_item_43 h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 70px;
   transition: 0.4s;
   transition-property: transform;
+  margin-top: 27rem;
 }
 .lp_item_42 .lp_item_43 h2 span {
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--black);
 }
 .lp_item_42:hover .lp_item_43 h2 {
-  transform: translateY(-30px);
+  transform: translateY(-50px);
 }
 .lp_item_44 {
   position: absolute;
@@ -928,7 +933,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 12px;
   bottom: -60px;
   transition: 0.6s;
   transition-property: bottom;
@@ -943,6 +948,10 @@ section {
 .lp_item_44 .lp_item_45 a {
   margin-right: 20px;
   fill: var(--hoover-color);
+  font-size: 2rem;
+}
+.icon-links svg:hover {
+  transform: scale(1.7);
 }
 /* .lp_item_4 {
   width: 70vw;
@@ -1501,26 +1510,63 @@ section {
 }
 
 /* Promotion section starts here  */
-.loader {
-  width: 1000px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-left: 42rem;
-}
-.loader p {
+.promotion_items {
+  width: 65vw;
   color: var(--white);
-  font-size: 3rem;
+}
+.promotion_item_1 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.promotion_item_1 h2 {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--third-color);
+}
+.promotion_item_1 h3 {
+  margin-top: 0.4rem;
+  margin-left: 2.5rem;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
   font-family: var(--logo-font);
+  color: var(--white);
+}
+.promotion_item_2 {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+}
+.promotion_item_2 h3 {
+  margin-top: 5rem;
+  color: var(--third-color);
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-family: var(--logo-font);
+}
+.promotion_item_2 p {
+  margin-top: 1rem;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
-.loader img {
-  margin-top: 2rem;
-  margin-right: 2rem;
+.promotion_item_2 p span {
+  font-size: 3rem;
+  color: var(--hoover-color);
+  font-family: var(--logo-font);
+}
+.promotion_item_3 {
+  max-width: 100rem;
+  height: 50rem;
+  display: flex;
+}
+.promotion_item_3 img {
+  width: 100%;
+  height: 100%;
 }
 /* Promotion section ends here  */
 /* Contact section starts here  */
@@ -2067,7 +2113,19 @@ section li {
 @media (max-width: 1080px) {
   .lp_item_42 {
     flex: 100%;
-    max-width: 480px;
+    max-width: 625px;
+  }
+  .lp_item_42 .lp_item_43 h2 {
+    font-size: 3rem;
+  }
+  .lp_item_42 .lp_item_43 h2 span {
+    font-size: 3rem;
+  }
+  .lp_item_44 {
+    bottom: -70px;
+  }
+  .lp_item_44 .lp_item_45 a {
+    font-size: 4rem;
   }
 }
 @media (max-width: 991px) {
@@ -2133,6 +2191,7 @@ section li {
   .swiper i:hover {
     font-size: 4rem;
   }
+
   .lp_item_4 {
     width: auto;
     height: auto;
@@ -2159,7 +2218,7 @@ section li {
     font-size: 2rem;
   }
   .lp_item_1 {
-    width: 93vw;
+    width: 98vw;
     height: auto;
     margin-left: 0;
   }
@@ -2188,7 +2247,13 @@ section li {
     align-items: center;
   }
   .lp_item_6 .lp_item_61 {
-    width: 400px;
+    width: 550px;
+  }
+  .lp_item_6 .lp_item_61 .lp_item_63 h3 {
+    font-size: 25px;
+  }
+  .lp_item_6 .lp_item_61 .lp_item_63 p {
+    font-size: 1.8rem;
   }
   .lp_item_7 {
     margin-left: 0;
@@ -2283,6 +2348,16 @@ section li {
     min-height: auto;
     margin-top: 100px;
   }
+  .promotion_item_2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .promotion_item_2 h3 {
+    font-size: 3.5rem;
+  }
+  .promotion_item_2 p {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 800px) {
   .gallery .image {
@@ -2311,6 +2386,9 @@ section li {
   .lp_item_6 .lp_item_61 .lp_item_63 {
     position: relative;
     width: 100%;
+  }
+  .lp_item_6 .lp_item_61 .lp_item_63 h3 {
+    text-align: center;
   }
 }
 @media (max-width: 700px) {
@@ -2362,7 +2440,7 @@ section li {
     font-size: 3rem;
   }
   .lp_item_2 {
-    margin-left: 75px;
+    margin-left: 55px;
   }
   .lp_item_2 h2 {
     margin-top: 2rem;
@@ -2388,31 +2466,26 @@ section li {
     flex-direction: column;
     margin: 0px;
   }
+  .lp_item_42 .lp_item_43 h2 {
+    margin-top: 34rem;
+  }
+  .lp_item_44 {
+    bottom: -70px;
+    padding: 10px;
+  }
   .lp_item_44 .lp_item_45 a svg {
-    font-size: 38px;
+    font-size: 28px;
   }
-  .lp_item_411 {
-    margin-top: 0rem;
-    max-width: 43rem;
-  }
-  .lp_item_41 .lp_item_411 h2 {
-    margin-bottom: 9rem;
-    font-size: 2em;
-  }
-  .lp_item_412 {
-    width: 42.6rem;
-    margin-left: 0rem;
-  }
+
   .lp_item_5 {
     width: 115vw;
-    margin-right: 153px;
-    margin-left: 30px;
+    margin-left: -106px;
   }
   .lp_item_5 .read-more {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     margin-right: 0px;
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
   .lp_item_71 p {
     font-size: 2rem;
@@ -2425,6 +2498,10 @@ section li {
   }
   .lp_item_71 .footer-contact-info p {
     font-size: 2.3rem;
+  }
+  .promotion_item_2 {
+    margin-left: 0;
+    text-align: center;
   }
   .footer-contact-mail:before {
     right: 0;

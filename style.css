@@ -1534,10 +1534,8 @@ section {
   display: flex;
   justify-content: space-around;
   margin: 20px;
-  border: 3px solid red;
 }
 .contact_item_3 {
-  border: 3px solid green;
   width: 25%;
   margin-left: 10rem;
 }
@@ -1569,7 +1567,6 @@ section {
   color: var(--hoover-color);
 }
 .contact_item_4 {
-  border: 3px solid salmon;
   width: 20%;
 }
 .contact_item_4 i {
@@ -1578,7 +1575,6 @@ section {
   margin: 5px;
 }
 .contact_item_5 {
-  border: 3px solid skyblue;
   width: 20%;
 }
 .contact_item_5 h2 {
@@ -1631,7 +1627,6 @@ section {
   align-items: center;
   margin-left: 5rem;
   margin-bottom: 10rem;
-  border: 3px solid slateblue;
 }
 .mapBox {
   position: relative;

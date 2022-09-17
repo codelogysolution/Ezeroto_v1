@@ -2222,8 +2222,11 @@ nav .items .item:hover {
     flex-direction: column;
   }
   .restaurant_item22 {
-    width: 60vw;
+    width: auto;
     height: auto;
+  }
+  .restaurant_item {
+width: auto;
   }
   .rooms_item_1 {
     min-height: auto;
@@ -2290,6 +2293,12 @@ nav .items .item:hover {
   }
   .promotion_item_2 p {
     font-size: 2.5rem;
+  }
+  .promotion_item_1 {
+    margin-top: 100px;
+  }
+   .promotion_item_3 {
+    height: auto;
   }
   .contact_item_1 {
     width: 100vw;

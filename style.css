@@ -883,6 +883,7 @@ section {
   height: 300px;
   margin: 20px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .lp_item_42 img {
   width: 100%;
@@ -2226,7 +2227,7 @@ nav .items .item:hover {
     height: auto;
   }
   .restaurant_item {
-width: auto;
+    width: auto;
   }
   .rooms_item_1 {
     min-height: auto;
@@ -2297,7 +2298,7 @@ width: auto;
   .promotion_item_1 {
     margin-top: 100px;
   }
-   .promotion_item_3 {
+  .promotion_item_3 {
     height: auto;
   }
   .contact_item_1 {
@@ -2456,6 +2457,10 @@ width: auto;
   }
   .swiper i:hover {
     font-size: 3rem;
+  }
+  .details-box .name-title p {
+    font-size: 2.2rem;
+    margin-top: 0.1rem;
   }
   .lp_item_2 {
     margin-left: 55px;

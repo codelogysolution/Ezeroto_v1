@@ -2491,15 +2491,16 @@ nav .items .item:hover {
   }
   .lp_item_42 .lp_item_43 h2,
   .lp_item_42 .lp_item_43 h2 span {
-    margin-top: 34rem;
+    margin-top: 29.5rem;
     font-size: 2rem;
   }
   .lp_item_44 {
-    bottom: -70px;
-    padding: 10px;
+    bottom: 0px;
+    padding: 2px;
+    opacity: 0.7;
   }
   .lp_item_44 .lp_item_45 a svg {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .lp_item_5 {
@@ -2549,11 +2550,17 @@ nav .items .item:hover {
   .pool_item_3 .pool_item_4 {
     width: 100%;
   }
+  .pool_item_3 .pool_item_4:hover:nth-child(odd) .pool_item_5 {
+    top: 50px;
+  }
+  .pool_item_3 .pool_item_4:hover:nth-child(even) .pool_item_5 {
+    top: 50px;
+  }
   .pool_item_3 .pool_item_6 h2 {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .pool_item_3 .pool_item_6 h3 {
-    margin-top: 27rem;
+    margin-top: 2rem;
   }
   .pool_item_7 {
     margin-right: 5rem;

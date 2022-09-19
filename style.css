@@ -1122,6 +1122,24 @@ section {
   margin-top: 2rem;
   color: var(--hoover-color);
 }
+.rooms_item_5 h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--hoover-color);
+}
+.rooms_item_5 p {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--hoover-color);
+}
+.rooms_item_5 h5 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--hoover-color);
+  text-decoration: underline;}
 .rooms_item_4 {
   display: flex;
   flex-direction: row;
@@ -1297,6 +1315,11 @@ section {
   /* border: 3px solid gold; */
 }
 .restaurant_item_11 h4 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.restaurant_item_11 h5 {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
@@ -1726,6 +1749,7 @@ nav .items .item:hover {
   margin: 30px 0;
   border-radius: 5px;
   border: 1px solid var(--hoover-color);
+  margin-left: 4.2rem;
 }
 .pool_item_3 .pool_item_4 .pool_item_5 {
   position: absolute;

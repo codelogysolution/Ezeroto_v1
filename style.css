@@ -1104,7 +1104,7 @@ section {
 }
 .rooms_table_1 td {
   border: 2px solid var(--hoover-color);
-
+  text-align: center;
   font-size: 2rem;
   color: var(--white);
 }
@@ -1139,7 +1139,8 @@ section {
   text-align: center;
   margin-top: 2rem;
   color: var(--hoover-color);
-  text-decoration: underline;}
+  text-decoration: underline;
+}
 .rooms_item_4 {
   display: flex;
   flex-direction: row;
@@ -2163,6 +2164,7 @@ nav .items .item:hover {
   }
   .pool_item_3 .pool_item_4 {
     width: 95%;
+    margin-left: 0;
   }
   .pool_item_3 .pool_item_6 h2 {
     font-size: 3rem;

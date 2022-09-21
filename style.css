@@ -1087,6 +1087,8 @@ section {
 }
 .rooms_item_3_9 p {
   font-size: 2rem;
+  font-style: italic;
+  text-align: center;
 }
 .rooms_table_1 {
   min-height: 200px;
@@ -1746,6 +1748,46 @@ nav .items .item:hover {
   flex-wrap: wrap;
   margin: 20px;
 }
+.pool_item_33 {
+  /* border: 3px solid green; */
+  width: 79vw;
+  height:auto;
+  margin-left: 7rem;
+}
+.pool_item_33 h2{
+margin-top: 2rem;
+font-size: 2.2rem;
+margin-left: 3rem;
+text-transform: uppercase;
+letter-spacing: 0.1rem;
+color: var(--third-color);
+}
+.pool_item_33 h3 {
+margin-top: 0.4rem;
+margin-bottom: 2.5rem;
+
+font-size: 4rem;
+text-transform: none;
+letter-spacing: 0.1rem;
+font-family: var(--logo-font);
+color: var(--white);
+}
+.pool_item_33 ul{
+margin-left: 4rem;
+
+}
+.pool_item_33 li{
+  color: var(--white);
+  font-size: 1.8rem;
+  list-style-type: disc;
+}
+.pool_item_33 p{
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--white);
+  text-align: center;
+}
 .pool_item_3 .pool_item_4 {
   position: relative;
   display: flex;
@@ -2185,6 +2227,16 @@ nav .items .item:hover {
     font-size: 3rem;
     margin-top: 24rem;
   }
+  .pool_item_33 {
+    width: auto;
+    height: auto;
+margin-left: 0;
+
+}
+.pool_item_33 h2, .pool_item_33 h3 {
+text-align: center;
+
+}
   .pool_item_7 {
     width: 100%;
     padding: 25pxpx;
@@ -2508,7 +2560,7 @@ nav .items .item:hover {
   .circle.circle2 {
     width: 170px;
     height: 170px;
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .pool_item_7 h2 {
     font-size: 3em;

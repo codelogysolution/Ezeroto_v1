@@ -846,7 +846,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 50px;
+  margin-left: 15rem;
 }
 .lp_item_5 a {
   position: relative;
@@ -1498,6 +1498,13 @@ section {
   font-size: 3rem;
   font-weight: 400;
 }
+.contact_item_5 .contact-mail a {
+  color: #ffffff80;
+  cursor: pointer;
+}
+/* .contact_item_5 .contact-mail p:hover {
+  transform: scale(1.1);
+} */
 .direction {
   position: relative;
   display: flex;
@@ -2129,8 +2136,8 @@ nav .items .item:hover {
 
   /* Restaurant */
   .main_container {
-    margin-left: 0;
-    /* border: 3px solid palevioletred; */
+    margin-left: 0.5rem;
+    width: 98%;
   }
 
   .restaurant_item_2 {
@@ -2589,5 +2596,8 @@ nav .items .item:hover {
   }
   .restaurant_item_12_1 {
     max-width: 75%;
+  }
+  .rooms_item_3_9 p {
+    margin-left: 3rem;
   }
 }

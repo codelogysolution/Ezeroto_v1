@@ -216,6 +216,17 @@ section {
   left: -10%;
   animation: social_animate 0.7s;
 }
+.social_icon iconify-icon {
+  line-height: 7rem;
+  font-size: 4.5rem;
+  color: var(--hoover-color);
+  transition: 0.2s linear;
+  margin-top: 1.3rem;
+}
+.social_icon:hover iconify-icon {
+  transform: scale(1.4);
+  color: var(--background-color);
+}
 
 @keyframes social_animate {
   0% {
@@ -830,8 +841,12 @@ section {
 .lp_item_44 .lp_item_45 {
   color: #222;
   font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.lp_item_44 .lp_item_45 a {
+.lp_item_44 .lp_item_45 p {
   margin-right: 20px;
   fill: var(--hoover-color);
   font-size: 2rem;
@@ -839,7 +854,6 @@ section {
 .icon-links svg:hover {
   transform: scale(1.7);
 }
-
 .lp_item_5 {
   width: 70vw;
   height: 8vh;
@@ -1751,37 +1765,36 @@ nav .items .item:hover {
 .pool_item_33 {
   /* border: 3px solid green; */
   width: 79vw;
-  height:auto;
+  height: auto;
   margin-left: 7rem;
 }
-.pool_item_33 h2{
-margin-top: 2rem;
-font-size: 2.2rem;
-margin-left: 3rem;
-text-transform: uppercase;
-letter-spacing: 0.1rem;
-color: var(--third-color);
+.pool_item_33 h2 {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--third-color);
 }
 .pool_item_33 h3 {
-margin-top: 0.4rem;
-margin-bottom: 2.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 2.5rem;
 
-font-size: 4rem;
-text-transform: none;
-letter-spacing: 0.1rem;
-font-family: var(--logo-font);
-color: var(--white);
+  font-size: 4rem;
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  font-family: var(--logo-font);
+  color: var(--white);
 }
-.pool_item_33 ul{
-margin-left: 4rem;
-
+.pool_item_33 ul {
+  margin-left: 4rem;
 }
-.pool_item_33 li{
+.pool_item_33 li {
   color: var(--white);
   font-size: 1.8rem;
   list-style-type: disc;
 }
-.pool_item_33 p{
+.pool_item_33 p {
   font-size: 1.7rem;
   margin-top: 2rem;
   font-style: italic;
@@ -2230,13 +2243,12 @@ margin-left: 4rem;
   .pool_item_33 {
     width: auto;
     height: auto;
-margin-left: 0;
-
-}
-.pool_item_33 h2, .pool_item_33 h3 {
-text-align: center;
-
-}
+    margin-left: 0;
+  }
+  .pool_item_33 h2,
+  .pool_item_33 h3 {
+    text-align: center;
+  }
   .pool_item_7 {
     width: 100%;
     padding: 25pxpx;
